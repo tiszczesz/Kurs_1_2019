@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Kurs.ConsoleApp.Models;
+using Kurs.Primary;
 
 namespace KursTest
 {

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Kurs.Primary;
 
 namespace Kurs.ConsoleApp
 {
@@ -21,6 +22,15 @@ namespace Kurs.ConsoleApp
             //string nazwisko = Console.ReadLine();
             //Console.WriteLine("Witaj {0} {1} "
             //                  +DateTime.Now.Date.ToLongDateString(),imie,nazwisko);
+            Console.WriteLine("======= LICZBY PIERWSZE ================");
+            Console.Write("Podaj do jakiej liczby szukac (wiecej niz 1): ");
+            int limit = int.Parse(Console.ReadLine());
+            PrimaryNumbers ps = new PrimaryNumbers(limit);
+            Console.WriteLine("Liczby pierwsze:");
+            foreach (int number in ps.GetNumbers())
+            {
+                Console.Write(number+" ");
+            }
             Console.ReadKey();
         }
     }

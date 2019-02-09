@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Kurs.ConsoleApp.Models
+namespace Kurs.Primary
 {
     public class PrimaryNumbers
     {
