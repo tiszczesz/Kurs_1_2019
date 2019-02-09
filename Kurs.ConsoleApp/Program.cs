@@ -19,7 +19,8 @@ namespace Kurs.ConsoleApp
             string imie = Console.ReadLine();
             Console.Write("Podaj swoje nazwisko: ");
             string nazwisko = Console.ReadLine();
-            Console.WriteLine("Witaj {0} {1} "+DateTime.Now.Date.ToLongDateString(),imie,nazwisko);
+            Console.WriteLine("Witaj {0} {1} "
+                              +DateTime.Now.Date.ToLongDateString(),imie,nazwisko);
             Console.ReadKey();
         }
     }
