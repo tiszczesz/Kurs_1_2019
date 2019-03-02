@@ -1,24 +1,22 @@
-﻿@model List<string>
+﻿@model WebPrimalNumbers.Models.Primal
 @{
     ViewBag.Title = "Z paczki";
 }
 
 <h2>Index</h2>
-<div class="col-lg-2 text-capitalize">
-    Hello from controller Primal action Index
-</div>
-<div class="warning">
-    @ViewBag.hello
-</div>
-<div class="alert-info">
-    @ViewBag.blabla
-</div>
-<div class="col-lg-4">
-    <ul class="list-group col-lg-offset-2">
-        @foreach (var item in Model)
-        {
-            <li class="item text-info">@item</li>
+<div class="col-lg-8">
+    @using( Html.BeginForm("Index", "Primal", null, FormMethod.Post,
+        new{@class="form-inline"})){
+            @Html.ValidationSummary(false)
+            @Html.LabelFor(m=>m.Liczba) 
+            @Html.TextBoxFor(m=>m.Liczba)
+            <input type="submit" value="Generuj" class="btn btn-lg btn-default"/>
         }
-    </ul>
 </div>
+@if (ViewBag.liczby != null)
+{
+    <div class="alert alert-success">
+       @ViewBag.liczby
+    </div>
+}
 
