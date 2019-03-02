@@ -1,10 +1,24 @@
-﻿
+﻿@model List<string>
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Z paczki";
 }
 
 <h2>Index</h2>
 <div class="col-lg-2 text-capitalize">
     Hello from controller Primal action Index
+</div>
+<div class="warning">
+    @ViewBag.hello
+</div>
+<div class="alert-info">
+    @ViewBag.blabla
+</div>
+<div class="col-lg-4">
+    <ul class="list-group col-lg-offset-2">
+        @foreach (var item in Model)
+        {
+            <li class="item text-info">@item</li>
+        }
+    </ul>
 </div>
 

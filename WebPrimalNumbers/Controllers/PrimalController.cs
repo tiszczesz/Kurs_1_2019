@@ -11,6 +11,15 @@ namespace WebPrimalNumbers.Controllers
         // GET: Primal
         public ActionResult Index()
         {
+           
+            return View();
+        }
+
+        // POST: Primal
+        [HttpPost]
+        public ActionResult Index(int liczba)
+        {
+
             return View();
         }
     }
