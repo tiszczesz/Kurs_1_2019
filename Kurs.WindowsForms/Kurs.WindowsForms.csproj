@@ -79,5 +79,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Kurs.Primary\Kurs.Primary.csproj">
+      <Project>{906ce60c-4220-4fea-95c8-61d69f58e149}</Project>
+      <Name>Kurs.Primary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

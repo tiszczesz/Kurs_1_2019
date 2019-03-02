@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kurs.Primary", "Kurs.Primar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kurs.WindowsForms", "Kurs.WindowsForms\Kurs.WindowsForms.csproj", "{D975D97E-205C-4EF2-BF59-8389EA8138CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebPrimalNumbers", "WebPrimalNumbers\WebPrimalNumbers.csproj", "{DA6692EC-7E30-4958-BE3B-E2459B9952C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{D975D97E-205C-4EF2-BF59-8389EA8138CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D975D97E-205C-4EF2-BF59-8389EA8138CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D975D97E-205C-4EF2-BF59-8389EA8138CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA6692EC-7E30-4958-BE3B-E2459B9952C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA6692EC-7E30-4958-BE3B-E2459B9952C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA6692EC-7E30-4958-BE3B-E2459B9952C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA6692EC-7E30-4958-BE3B-E2459B9952C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
