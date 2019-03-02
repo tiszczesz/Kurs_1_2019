@@ -22,3 +22,12 @@ select,
 textarea {
     max-width: 280px;
 }
+#t1 {
+    border-collapse: collapse;
+    margin-left: 50px;
+}
+#t1 td {
+    padding: 5px; border: solid black 1px;
+    text-align: center;
+}
+.primal{ background-color: red;}

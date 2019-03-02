@@ -16,7 +16,22 @@
 @if (ViewBag.liczby != null)
 {
     <div class="alert alert-success">
-       @ViewBag.liczby
+        @ViewBag.liczby
+    </div>
+    <div>
+        @{ int licznik = 0; }
+        <table id="t1">
+            @for (int i = 0; i < ViewBag.rows; i++)
+            {
+                <tr>
+                    @for (int j = 0; j < 20; j++)
+                    {
+                        licznik++;
+                        <td>@licznik</td>
+                    }
+                </tr>
+            }
+        </table>
     </div>
 }
 
