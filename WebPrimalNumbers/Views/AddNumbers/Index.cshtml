@@ -1,0 +1,23 @@
+﻿@model WebPrimalNumbers.Models.AddNumbers
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<div class="col-lg-8">
+    @using (Html.BeginForm("Index", "AddNumbers", null,
+             FormMethod.Post,new { @class = "form-inline" }))
+    {
+        @Html.ValidationSummary(false)
+        <div class="form-control">
+            @Html.LabelFor(m => m.A)
+            @Html.TextBoxFor(m => m.A)
+        </div>
+        <div class="form-control">
+            @Html.LabelFor(m => m.B)
+            @Html.TextBoxFor(m => m.B)
+        </div>
+        <input type="submit" value="Dodaj" class="btn btn-lg btn-default" />
+    }
+</div>
+

@@ -27,7 +27,9 @@
                     @for (int j = 0; j < 20; j++)
                     {
                         licznik++;
-                        <td>@licznik</td>
+                        string wyr = ViewBag.primary.Contains(licznik) ?
+                            "primal" : "";
+                        <td class="@wyr">@licznik</td>
                     }
                 </tr>
             }
